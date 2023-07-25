@@ -8,7 +8,7 @@ hero:
   tagline: vue ts nodejs electron uniapp
   actions:
     - theme: brand
-      text: 端框架
+      text: 框架
       link: /doc/front-end-rule/start
     - theme: brand
       text: 组件

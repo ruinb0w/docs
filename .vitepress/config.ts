@@ -21,15 +21,18 @@ export default defineConfig({
         text: "框架",
         items: [
           { text: "总览", link: "/doc/front-end-rule/start" },
-          { text: "vue3 示例", link: "/doc/front-end-rule/vue3" },
-          { text: "pinia 示例", link: "/doc/front-end-rule/pinia" },
+          { text: "vue3", link: "/doc/front-end-rule/vue3" },
+          { text: "vue-router", link: "/doc/front-end-rule/vue-router" },
+          { text: "pinia", link: "/doc/front-end-rule/pinia" },
         ],
       },
       {
-        text: "组件",
+        text: "uniapp组件",
         items: [
           { text: "概述", link: "/doc/components/start" },
-          { text: "popup", link: "/doc/components/popup" },
+          { text: "Popup", link: "/doc/components/popup" },
+          { text: "TagSelector", link: "/doc/components/tag-selector" },
+          { text: "TabSwitcher", link: "/doc/components/tab-switcher" },
         ],
       },
     ],

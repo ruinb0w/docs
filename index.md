@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 端框架
-      link: /docs/front-end-rule/start
+      link: /doc/front-end-rule/start
     - theme: brand
       text: 组件
-      link: /docs/components/start
+      link: /doc/components/start
 
 features:
   - title: Feature A

@@ -2,17 +2,17 @@
 
 ## vue 生态
 
-[vue3](https://cn.vuejs.org) 渐进式前端框架, 兼容 vue2 语法, [详情](/docs/front-end-rule/vue3)
+[vue3](https://cn.vuejs.org) 渐进式前端框架, 兼容 vue2 语法, [详情](/doc/front-end-rule/vue3)
 
-[vue-router](https://cn.vuejs.org) vue 路由组件, [详情](/docs/front-end-rule/vue-router)
+[vue-router](https://cn.vuejs.org) vue 路由组件, [详情](/doc/front-end-rule/vue-router)
 
-[pinia](https://cn.vuejs.org) vue 全局状态管理工具, [详情](/docs/front-end-rule/vue3)
+[pinia](https://cn.vuejs.org) vue 全局状态管理工具, [详情](/doc/front-end-rule/vue3)
 
-[vueuse](https://vueuse.org/) 一些写好的 vue3 composition API, [详情](/docs/front-end-rule/vue3)
+[vueuse](https://vueuse.org/) 一些写好的 vue3 composition API, [详情](/doc/front-end-rule/vue3)
 
 ## 样式
 
-[sass](https://sass-lang.com/) 样式工具,兼容 css 语法, [详情](/docs/front-end-rule/vue3)
+[sass](https://sass-lang.com/) 样式工具,兼容 css 语法, [详情](/doc/front-end-rule/vue3)
 
 [element-plus](https://element-plus.org/en-US/component/button.html) pc 端 UI 库
 
@@ -32,6 +32,6 @@
 
 ## 其他
 
-[typescript](https://www.typescriptlang.org/) 带类型检测的 js, [详情](/docs/front-end-rule/vue3)
+[typescript](https://www.typescriptlang.org/) 带类型检测的 js, [详情](/doc/front-end-rule/vue3)
 
 [wujie](https://wujie-micro.github.io/doc/) 微前端框架

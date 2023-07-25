@@ -6,6 +6,7 @@ export default defineConfig({
   description: "Some Documents",
   ignoreDeadLinks: true,
   outDir: "./docs",
+  base: "/docs/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

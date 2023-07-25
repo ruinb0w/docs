@@ -5,6 +5,7 @@ export default defineConfig({
   title: "Ruinb0w's Doc",
   description: "Some Documents",
   ignoreDeadLinks: true,
+  outDir: "./dist",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

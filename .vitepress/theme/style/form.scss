@@ -1,0 +1,13 @@
+input {
+  background: var(--input-bg);
+  padding: var(--input-padding);
+}
+textarea {
+  background: var(--input-bg);
+  padding: var(--input-padding);
+  width: 100%;
+  box-sizing: border-box;
+}
+input.disabled {
+  color: #777;
+}

@@ -1,0 +1,17 @@
+button {
+  background: none;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0;
+  color: var(--font-color);
+  line-height: inherit;
+}
+button::after {
+  border-radius: 0;
+  border: none;
+}
+
+.navigator-hover {
+  background: none;
+}

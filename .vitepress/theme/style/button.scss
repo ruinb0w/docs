@@ -1,0 +1,29 @@
+.btn {
+  background: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  margin: var(--margin);
+  text-align: center;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.btn.plain {
+  background: #fff;
+  color: var(--font-color);
+  border: 1px solid var(--border-color);
+}
+.btn.small {
+  font-size: 0.8rem;
+}
+.btn.danger {
+  background: var(--danger-color);
+}
+.btn.warning {
+  background: var(--warning-color);
+}
+.btn.success {
+  background: var(--success-color);
+}

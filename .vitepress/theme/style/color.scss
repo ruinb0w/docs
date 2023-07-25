@@ -1,0 +1,42 @@
+body,
+page {
+  // font
+  --font-color: #272b43;
+  --font-light-color: #b4b3bd;
+  --small-font: 0.8rem;
+  --extra-small-font: 0.6rem;
+  --big-font: 1.2rem;
+  --extra-big-font: 1.4rem;
+
+  // layout
+  --margin: 10px;
+  --input-padding: 10px;
+  --input-bg: #f9fafd;
+  --shadow: 0 0 5px 1px #00000055;
+
+  // color
+  --bg-color: #f3f6fe;
+  --border-color: #eee;
+  --hover-color: #f9fafd;
+  --active-color: #f3f5f9;
+
+  --main-color: #78a1f8;
+  --main-bg-color: #ecf5ff;
+  --main-border-color: #c6e2ff;
+
+  --danger-color: #f56c6c;
+  --danger-bg-color: #fef0f0;
+  --danger-border-color: #fab6b6;
+
+  --warning-color: #e6a23c;
+  --warning-bg-color: #fdf6ec;
+  --warning-border-color: #f3d19e;
+
+  --success-color: #56ba37;
+  --success-bg-color: #f0f9eb;
+  --success-border-color: #b3e19d;
+
+  --info-color: #909399;
+  --info-bg-color: #f4f4f5;
+  --info-border-color: #909399;
+}

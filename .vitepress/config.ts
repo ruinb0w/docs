@@ -8,12 +8,16 @@ export default defineConfig({
   outDir: "./docs",
   base: "/docs/",
   themeConfig: {
+    search: {
+      provider: "local",
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
       // { text: "Examples", link: "/markdown-examples" },
       { text: "框架", link: "/doc/front-end-rule/start" },
       { text: "组件", link: "/doc/components/start" },
+      { text: "运维", link: "/doc/maintain/start" },
     ],
 
     sidebar: [
@@ -34,6 +38,10 @@ export default defineConfig({
           { text: "TagSelector", link: "/doc/components/tag-selector" },
           { text: "TabSwitcher", link: "/doc/components/tab-switcher" },
         ],
+      },
+      {
+        text: "运维",
+        items: [{ text: "证书", link: "/doc/maintain/certbot" }],
       },
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/ruinb0w/docs" }],

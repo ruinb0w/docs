@@ -13,12 +13,15 @@ hero:
     - theme: brand
       text: 组件
       link: /doc/components/start
+    - theme: brand
+      text: 运维
+      link: /doc/maintain/start
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: vue
+    details: 渐进式前端框架
+  - title: electron
+    details: 以chromium和nodejs为基础的桌面运行环境
+  - title: uniapp
+    details: 以vue的语法编写小程序, 并支持编译到多个平台
 ---

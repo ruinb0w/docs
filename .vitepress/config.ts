@@ -37,6 +37,7 @@ export default defineConfig({
           { text: "Popup", link: "/doc/components/popup" },
           { text: "TagSelector", link: "/doc/components/tag-selector" },
           { text: "TabSwitcher", link: "/doc/components/tab-switcher" },
+          { text: "QrCode", link: "/doc/components/qr-code" },
         ],
       },
       {

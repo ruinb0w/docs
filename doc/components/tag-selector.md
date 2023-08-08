@@ -59,6 +59,12 @@ const activeTagList = ref([]);
 </template>
 ```
 
+## 兼容
+
+| uniapp mp | uniapp h5 | web |
+| --------- | --------- | --- |
+| √         | √         | √   |
+
 ## API
 
 ### 属性
@@ -69,7 +75,7 @@ const activeTagList = ref([]);
 | mode     | radio,checkbox | checkbox | 模式                                |
 | rangeKey | string         | name     | tag 要显示的 key, 对应 v-model 的值 |
 
-## 事件
+### 事件
 
 | 事件   | 说明                |
 | ------ | ------------------- |

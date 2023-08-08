@@ -44,6 +44,12 @@ const current = ref(0);
 </template>
 ```
 
+## 兼容
+
+| uniapp mp | uniapp h5 | web |
+| --------- | --------- | --- |
+| √         | √         | √   |
+
 ## API
 
 ### 属性
@@ -56,4 +62,4 @@ const current = ref(0);
 | border   | boolean |      | false  | 底部显示边框                               |
 | bgStyle  | boolean |      | false  | 使用背景变色风格                           |
 
-## 事件
+### 事件

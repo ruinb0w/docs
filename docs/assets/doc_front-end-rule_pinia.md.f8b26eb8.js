@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as n}from"./chunks/framework.ba5de448.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"doc/front-end-rule/pinia.md","filePath":"doc/front-end-rule/pinia.md"}'),a={name:"doc/front-end-rule/pinia.md"};function r(o,c,i,d,s,p){return n(),t("div")}const l=e(a,[["render",r]]);export{_ as __pageData,l as default};

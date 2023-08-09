@@ -5,17 +5,17 @@ layout: home
 hero:
   name: "Ruinb0w's Doc"
   text: "Some Documents"
-  tagline: vue ts nodejs electron uniapp
+  tagline: vue ts nodejs electron uniapp express mongodb pm2 linux docker
   actions:
     - theme: brand
-      text: 框架
-      link: /doc/front-end-rule/start
+      text: 前端
+      link: /src/front-end-rule/start
     - theme: brand
-      text: 组件
-      link: /doc/components/start
+      text: 前端组件
+      link: /src/components/start
     - theme: brand
-      text: 运维
-      link: /doc/maintain/start
+      text: 后端
+      link: /src/maintain/start
 
 features:
   - title: web端

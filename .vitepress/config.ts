@@ -28,6 +28,7 @@ export default defineConfig({
           { text: "vue3", link: "/src/front-end-rule/vue3" },
           { text: "vue-router", link: "/src/front-end-rule/vue-router" },
           { text: "pinia", link: "/src/front-end-rule/pinia" },
+          { text: "nuxt", link: "/src/front-end-rule/nuxt" },
         ],
       },
       {

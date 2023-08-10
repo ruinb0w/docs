@@ -2,13 +2,15 @@
 
 路由是单页面应用必不可少的功能, uniapp 已经帮你处理了路由, nuxt 则是通过文件结构来管理路由
 
-## 安装
+## 快速开始
+
+### 安装
 
 ```bash
 pnpm install vue-router@4
 ```
 
-## 配置
+### 配置
 
 ```ts
 // main.ts
@@ -29,7 +31,22 @@ const router = VueRouter.createRouter({
 app.use(router);
 ```
 
-## 使用
+### 使用
+
+```vue
+<!-- App.vue -->
+
+<template>
+  <!--路由对应的组件会被渲染在这里-->
+  <router-view />
+
+  <!--下面是导航链接-->
+  <router-link to="/">Home</router-link>
+  <router-link to="/about">About</router-link>
+</template>
+```
+
+## 更多功能
 
 ### 404
 

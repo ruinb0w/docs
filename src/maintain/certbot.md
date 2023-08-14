@@ -6,7 +6,7 @@
 
 使用 letsencrypt 的 `certbot` 工具
 
-```ba'sh
+```bash
 dnf install certbot
 ```
 

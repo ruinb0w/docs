@@ -10,7 +10,7 @@
 
 [vueuse](https://vueuse.org/) 一些写好的 vue3 composition API
 
-[nuxtjs](https://nuxt.com/) vue SSR 框架, 利于 SEO
+[nuxtjs](https://nuxt.com/) vue SSR 框架, 利于 SEO, [快速开始](./nuxt.md)
 
 ## 样式
 

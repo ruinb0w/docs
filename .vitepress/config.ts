@@ -29,6 +29,8 @@ export default defineConfig({
           { text: "vue-router", link: "/src/front-end-rule/vue-router" },
           { text: "pinia", link: "/src/front-end-rule/pinia" },
           { text: "nuxt", link: "/src/front-end-rule/nuxt" },
+          { text: "electron", link: "/src/front-end-rule/electron" },
+          { text: "uniapp", link: "/src/front-end-rule/uniapp" },
         ],
       },
       {

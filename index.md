@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Ruinb0w's Doc"
   text: "Some Documents"
-  tagline: vue ts nodejs electron uniapp express mongodb pm2 linux docker
+  tagline: linux docker ts nodejs pm2 express mongodb vue electron uniapp
   actions:
     - theme: brand
       text: 前端

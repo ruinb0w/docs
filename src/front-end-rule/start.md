@@ -1,6 +1,6 @@
 # 总览
 
-## vue 生态
+## vue ecosystem
 
 [vue3](https://cn.vuejs.org) 渐进式前端框架, 兼容 vue2 语法, [快速开始](/doc/front-end-rule/vue3)
 
@@ -11,6 +11,10 @@
 [vueuse](https://vueuse.org/) 一些写好的 vue3 composition API
 
 [nuxtjs](https://nuxt.com/) vue SSR 框架, 利于 SEO, [快速开始](./nuxt.md)
+
+## react ecosystem
+
+[react](https://react.dev/), [快速开始](./react.md)
 
 ## 样式
 
@@ -30,14 +34,18 @@
 
 ## 运行环境
 
-[uniapp](https://zh.uniapp.dcloud.io/) 以 vue 语法编写多端应用
+[uniapp](https://zh.uniapp.dcloud.io/) 以 vue 语法编写多端应用, [快速开始](./uniapp.md)
 
-[electron](https://www.electronjs.org/) 编写 pc 端应用
+[taro](https://docs.taro.zone/docs/) 以 react 语法编写多端应用, [快速开始](./taro.md)
+
+[electron](https://www.electronjs.org/) 编写 pc 端应用, [快速开始](./electron.md)
 
 [nodejs](https://nodejs.org/en) 命令行及服务端应用
 
+[chrome extension](https://developer.chrome.com/docs/extensions/) 浏览器扩展, [快速开始](./chrome-extensions.md)
+
 ## 其他
 
-[typescript](https://www.typescriptlang.org/) 带类型检测的 js
+[typescript](https://www.typescriptlang.org/) 带类型检测的 js, [快速开始](./typescript.md)
 
-[wujie](https://wujie-micro.github.io/doc/) 微前端框架
+[wujie](https://wujie-micro.github.io/doc/) 微前端框架, [快速开始](./wujie.md)

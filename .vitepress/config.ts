@@ -8,13 +8,13 @@ export default defineConfig({
   outDir: "./docs",
   base: "/docs/",
   themeConfig: {
+    outline: { level: [1, 4] },
     search: {
       provider: "local",
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      // { text: "Examples", link: "/markdown-examples" },
       { text: "前端", link: "/src/front-end-rule/start" },
       { text: "前端组件", link: "/src/components/start" },
       { text: "后端", link: "/src/maintain/start" },
@@ -29,8 +29,13 @@ export default defineConfig({
           { text: "vue-router", link: "/src/front-end-rule/vue-router" },
           { text: "pinia", link: "/src/front-end-rule/pinia" },
           { text: "nuxt", link: "/src/front-end-rule/nuxt" },
-          { text: "electron", link: "/src/front-end-rule/electron" },
           { text: "uniapp", link: "/src/front-end-rule/uniapp" },
+          { text: "react", link: "/src/front-end-rule/react" },
+          { text: "taro", link: "/src/front-end-rule/taro" },
+          { text: "electron", link: "/src/front-end-rule/electron" },
+          { text: "chrome-extensions", link: "/src/front-end-rule/chrome-extensions.md" },
+          { text: "wujie", link: "/src/front-end-rule/wujie.md" },
+          { text: "typescript", link: "/src/front-end-rule/typescript.md" },
         ],
       },
       {
@@ -50,6 +55,7 @@ export default defineConfig({
         items: [
           { text: "概述", link: "/src/maintain/start" },
           { text: "防火墙", link: "/src/maintain/firewall" },
+          { text: "express", link: "/src/maintain/express" },
           { text: "mongodb", link: "/src/maintain/mongodb" },
           { text: "docker", link: "/src/maintain/docker" },
           { text: "证书", link: "/src/maintain/certbot" },

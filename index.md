@@ -16,6 +16,9 @@ hero:
     - theme: brand
       text: 后端
       link: /src/maintain/start
+    - theme: brand
+      text: 范式
+      link: /src/concept/start
 
 features:
   - title: web端

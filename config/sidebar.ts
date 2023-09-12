@@ -1,4 +1,5 @@
 import { nestjs } from "./sidebar/nestjs";
+import { docker } from "./sidebar/docker";
 
 export const sidebar = [
   {
@@ -38,8 +39,8 @@ export const sidebar = [
       { text: "防火墙", link: "/src/maintain/firewall" },
       { text: "express", link: "/src/maintain/express" },
       { text: "mongodb", link: "/src/maintain/mongodb" },
-      { text: "docker", link: "/src/maintain/docker" },
       { text: "SSL", link: "/src/maintain/certbot" },
+      docker,
       nestjs,
     ],
   },

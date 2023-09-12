@@ -191,7 +191,7 @@ app.get("/index/:id", (req, res) => {
 
 > 模板要放在 views 文件夹下
 
-```ejs
+```js
 <h1>
     <%=msg%>
 </h1>

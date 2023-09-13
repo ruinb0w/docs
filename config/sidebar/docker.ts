@@ -1,7 +1,7 @@
 export const docker = {
   text: "docker",
   collapsed: true,
-  link: "/src/maintain/docker",
+  link: "/src/maintain/docker/start",
   items: [
     { text: "Quick Start", link: "/src/maintain/docker/start" },
     { text: "Image and Container", link: "/src/maintain/docker/image-container" },

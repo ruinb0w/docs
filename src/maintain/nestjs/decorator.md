@@ -19,3 +19,58 @@
     return this.userService.update(+id, updateUserDto);
   }
 ```
+
+## 自定义装饰器
+
+### 普通装饰器
+
+下面是封装 `SetMetadata` 的例子
+
+```ts
+// decorators/role.decorator.ts
+
+export const Role = (...args: string[]) => SetMetadata("roles", args);
+```
+
+```ts
+import { Role } from "@/decorators/role.decorator";
+import { Controller, UseGuards, SetMetadata } from "@nestjs/common";
+import { GuardGuard } from "@/guard.guard";
+
+@Controller("tryGuard")
+@UseGuards(GuardGuard)
+export class TryGuardController {
+  @Get()
+  @Role("admin")
+  findAll() {
+    return this.guardService.findAll();
+  }
+}
+```
+
+### 属性装饰器
+
+下面是获取请求 url 的例子
+
+```ts
+// decorators/param.decorator.ts
+
+import createParamDecorator from "@nestjs/common";
+
+export const ReqUrl = createParamDecorator((data, ctx) => {
+  const req = ctx.switchToHttp().getRequest();
+  return req.url;
+});
+```
+
+```ts
+import { ReqUrl } from "@/decorators/param.decorator";
+
+@Controller()
+export class TestController {
+  @Get()
+  getAll(@ReqUrl() url: string) {
+    return url;
+  }
+}
+```

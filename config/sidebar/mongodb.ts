@@ -5,5 +5,6 @@ export const mongodb = {
   items: [
     { text: "Quick Start", link: "/src/maintain/mongodb/start" },
     { text: "Replica Set", link: "/src/maintain/mongodb/replica-set" },
+    { text: "Docker", link: "/src/maintain/mongodb/docker" },
   ],
 };

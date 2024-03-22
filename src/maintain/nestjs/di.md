@@ -1,6 +1,6 @@
 # DI
 
-nestjs 利用 DI 模型来实现依赖注入, 并降低对象之间的耦合度, [详见](../concept/ioc.md)
+nestjs 利用 DI 模型来实现依赖注入, 并降低对象之间的耦合度, [详见](../../concept/ioc.md)
 
 - `*.module.ts` 中管理注入(容器)
 - `*.service.ts` 要注入的服务(实例)

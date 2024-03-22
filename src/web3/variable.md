@@ -128,7 +128,63 @@ uint256[3] memory _array;
 (, _bool2, ) = returnNamed();
 ```
 
+## 引用类型
+
+引用类型(Reference Type)：包括数组（array），结构体（struct）和映射（mapping）,由于这类变量比较复杂，占用存储空间大，我们在使用时必须要声明数据存储的位置。
+
+### 数据位置
+
+solidity 数据存储位置有三类：`storage`，`memory` 和 `calldata`。不同存储位置的 gas 成本不同。storage 类型的数据存在链上，类似计算机的硬盘，消耗 gas 多；memory 和 calldata 类型的临时存在内存里，消耗 gas 少.
+
+- storage：合约里的状态变量默认都是 storage，存储在链上。
+- memory：函数里的参数和临时变量一般用 memory，存储在内存中，不上链。
+- calldata：和 memory 类似，存储在内存中，不上链。与 memory 的不同点在于 calldata 变量不能修改（immutable），一般用于函数的参数。
+
+### 数据位置和赋值规则
+
+引用类型的 storage 赋值给 storage 变量时会创建**引用**, 故修改新变量时会影响旧变量
+
+引用类型的 storage 赋值给 memory 变量时会创建**独立副本**, 故修改新变量时不会影响旧变量
+
+memory 赋值给 memory 时会创建**引用**
+
+其他情况，变量赋值给 storage 会创建独立的副本
+
+### 变量的作用域
+
+solidity 变量的作用域有三种
+
+1. 状态变量: 声明在合约内方法外. 可在合约中访问. 其是 storage 类型的, 故修改时消耗的 gas 较大.
+2. 局部变量: 声明在方法内. 仅可在方法内访问. 当方法执行结束后即被销毁, 故消耗 gas 低.
+3. 全局变量: 由 solidity 事先定义, 可在任何地方访问. 以下是一些常见全局变量:
+   - blockhash(uint blockNumber): (bytes32)给定区块的哈希值 – 只适用于 256 最近区块, 不包含当前区块。
+   - block.coinbase: (address payable) 当前区块矿工的地址
+   - block.gaslimit: (uint) 当前区块的 gaslimit
+   - block.number: (uint) 当前区块的 number
+   - block.timestamp: (uint) 当前区块的时间戳，为 unix 纪元以来的秒
+   - gasleft(): (uint256) 剩余 gas
+   - msg.data: (bytes calldata) 完整 call data
+   - msg.sender: (address payable) 消息发送者 (当前 caller)
+   - msg.sig: (bytes4) calldata 的前四个字节 (function identifier)
+   - msg.value: (uint) 当前交易发送的 wei 值
+
+## 引用类型
+
+### 数组
+
+数组分为可变数组和不可变数组
+
+不可变数组在声明时即声明其长度, 可变数组则不声明其长度
+
+```solidity
+uint[10] nums;
+unit[] nums2;
+```
+
+> 注意：bytes 比较特殊，是数组，但是不用加[]。另外，不能用 byte[]声明单字节数组，可以使用 bytes 或 bytes1[]。在 gas 上，bytes 比 bytes1[]便宜。因为 bytes1[]在 memory 中要增加 31 个字节进行填充，会产生额外的 gas。但是在 storage 中，由于内存紧密打包，不存在字节填充。
+
 ## question
 
 1. 为什么 solidity 文档把函数类型归到数值类型
 2. 为什么映射类型单独归类而不是归类到引用类型
+3. 在数据位置和赋值规则中, 非引用类型也适用吗? 赋值不在方法内上述规则有效吗?

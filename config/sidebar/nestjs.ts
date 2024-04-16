@@ -1,10 +1,11 @@
 export const nestjs = {
   text: "nestjs",
   collapsed: true,
-  link: "/src/maintain/nestjs/quick",
+  link: "/src/maintain/nestjs/1-start",
   items: [
-    { text: "Quick Start", link: "/src/maintain/nestjs/quick" },
-    { text: "CLI", link: "/src/maintain/nestjs/cli" },
+    { text: "Quick Start", link: "/src/maintain/nestjs/1-start" },
+    { text: "CLI", link: "/src/maintain/nestjs/2-cli" },
+    { text: "Core", link: "/src/maintain/nestjs/3-core" },
     { text: "IOC & DI", link: "/src/maintain/nestjs/di" },
     { text: "Decorator", link: "/src/maintain/nestjs/decorator" },
     { text: "Middleware", link: "/src/maintain/nestjs/middleware" },

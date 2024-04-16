@@ -2,6 +2,7 @@ import { nestjs } from "./sidebar/nestjs";
 import { docker } from "./sidebar/docker";
 import { mongodb } from "./sidebar/mongodb";
 import { front } from "./sidebar/front";
+import { libs } from "./sidebar/lib";
 import { components } from "./sidebar/components";
 
 export const sidebar = [
@@ -19,6 +20,7 @@ export const sidebar = [
       docker,
       nestjs,
       mongodb,
+      libs,
     ],
   },
   {

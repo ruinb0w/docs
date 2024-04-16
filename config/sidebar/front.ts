@@ -14,5 +14,6 @@ export const front = {
     { text: "chrome-extensions", link: "/src/front-end-rule/chrome-extensions.md" },
     { text: "wujie", link: "/src/front-end-rule/wujie.md" },
     { text: "typescript", link: "/src/front-end-rule/typescript.md" },
+    { text: "vite", link: "/src/front-end-rule/vite.md" },
   ],
 };

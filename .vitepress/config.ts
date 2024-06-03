@@ -3,6 +3,7 @@ import { sidebar } from "../config/sidebar";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: { server: { host: "0.0.0.0" } },
   title: "Ruinb0w's Doc",
   description: "Some Documents",
   ignoreDeadLinks: true,

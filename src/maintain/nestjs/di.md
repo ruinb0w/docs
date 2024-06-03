@@ -2,9 +2,9 @@
 
 nestjs 利用 DI 模型来实现依赖注入, 并降低对象之间的耦合度, [详见](../../concept/ioc.md)
 
-- `*.module.ts` 中管理注入(容器)
-- `*.service.ts` 要注入的服务(实例)
-- `*.controller.ts` 使用服务的控制器(类)
+- `*.module.ts` 中管理注入
+- `*.service.ts` 要注入的服务
+- `*.controller.ts` 使用服务的控制器
 
 ## Service
 
@@ -126,7 +126,7 @@ export class ListModule {
     return {
       module: ListModule,
       controllers: [ListController],
-      providers: [configOptions], // 导出configOptions, 前需要先将其声明为providers, 否则不能导出
+      providers: [configOptions], // 导出configOptions前需要先将其声明为providers, 否则不能导出
       exports: [configOptions],
     };
   }

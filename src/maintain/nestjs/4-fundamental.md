@@ -168,3 +168,26 @@ export class DatabaseModule {
 
 `forRoot` 方法的返回值是一个动态模块, 该方法名称是自定义的, 通常对于在根模块导入时使用 `forRoot` 作为方法名
 `@Module()`中的参数为默认参数, `forRoot` 方法的返回值不会覆盖该参数
+
+### provider
+
+`@Module()` 装饰器的参数中的 `providers` 字段支持多种多种参数, 默认的引入 class 实际效果如下
+
+```ts
+@Module ({
+  controllers: [CatsController],
+  providers: [CatsService],
+})
+
+// 等价于
+
+@Module({
+  controllers: [CatsController],
+  providers: [
+    {
+      provide: CatsService,
+      useClass: CatsService,
+    },
+  ],
+})
+```

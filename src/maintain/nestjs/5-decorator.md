@@ -109,7 +109,26 @@ const rolesValue = this.reflector.get("roles", ctx.getHandler());
 
 <details>
 <summary>
+
+### 组合装饰器
+
+自定义装饰器可以将多个装饰器组合起来使用
+
+```ts
+import { applyDecorators } from "@nestjs/common";
+
+export function Auth(...roles: Role[]) {
+  return applyDecorators(
+    SetMetadata("roles", roles),
+    UseGuards(AuthGuard, RolesGuard),
+    ApiBearerAuth(),
+    ApiUnauthorizedResponse({ description: "Unauthorized" })
+  );
+}
+```
+
 下面是封装 `SetMetadata` 的例子
+
 </summary>
 
 ```ts

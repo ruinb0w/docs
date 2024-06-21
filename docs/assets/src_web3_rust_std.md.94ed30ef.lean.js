@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as s}from"./chunks/framework.e5c4830d.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"src/web3/rust/std.md","filePath":"src/web3/rust/std.md"}'),r={name:"src/web3/rust/std.md"};function a(c,o,n,d,p,_){return s(),e("div")}const f=t(r,[["render",a]]);export{m as __pageData,f as default};

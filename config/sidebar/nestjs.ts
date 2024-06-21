@@ -13,6 +13,7 @@ export const nestjs = {
     { text: "Exception", link: "/src/maintain/nestjs/8-exception" },
     { text: "Guards", link: "/src/maintain/nestjs/9-guards" },
     { text: "Interceptors", link: "/src/maintain/nestjs/interceptors" },
+    { text: "Provider", link: "/src/maintain/nestjs/provider" },
     { text: "DTO", link: "/src/maintain/nestjs/dto" },
     { text: "Mongodb", link: "/src/maintain/nestjs/mongodb" },
     { text: "IOC & DI", link: "/src/maintain/nestjs/di" },

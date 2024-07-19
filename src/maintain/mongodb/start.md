@@ -94,7 +94,7 @@ role
 示例
 
 ```sh
-mongodump --uri='mongodb://用户名:密码!@IP:端口' -d 要备份的数据库 --authenticationDatabase=验证用户的数据库 --gzip --archive="$(date +%F).gz"
+mongodump --uri='mongodb://用户名:密码@IP:端口' -d 要备份的数据库 --authenticationDatabase=验证用户的数据库 --gzip --archive="$(date +%F).gz"
 ```
 
 ### 还原

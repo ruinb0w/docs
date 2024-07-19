@@ -4,6 +4,7 @@ import DefaultTheme from "vitepress/theme";
 import "../../style/button.scss";
 import "../../style/color.scss";
 import "../../style/default.scss";
+import "./custom.css";
 
 export default {
   ...DefaultTheme,

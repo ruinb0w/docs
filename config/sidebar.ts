@@ -39,6 +39,7 @@ export const sidebar = [
       nestjs,
       mongodb,
       libs,
+      { text: "mongoose", link: "/src/maintain/mongoose/start" },
     ],
   },
   {

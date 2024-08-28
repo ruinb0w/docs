@@ -20,4 +20,28 @@
 
 ## 应用视角的操作系统
 
-学习使用 gcc 和 gdb, objdump
+一切都是状态机, 程序能做的事情只有取值计算赋值, 其他操作只能靠操作系统, 例如打印内容到屏幕上
+
+学习使用 gcc 和 gdb, file, objdump, qemu
+
+- [quick guide to gdb](https://www-users.cse.umn.edu/~kauffman/tutorials/gdb)
+
+## 硬件视角的操作系统
+
+REST 状态
+
+当计算机复位时(多年前的重启键)，处理器会被置于一个已知状态(REST 状态)，并且程序计数器 (PC) 会被自动设置到一个硬件固定的地址（通常称为复位向量地址）。此时，如果代码被正确放置在该地址处，则会在系统启动时开始执行这些指令。
+
+当今的厂商会在复位向量地址放一个 firmware(固件, 之所以叫固件是因为真的是固定在主板上且只读的), firmware 的作用是检查硬件状态，然后加载操作系统(当然还可以配置硬件)
+
+firmware 开始是 IBM 开发的 legacy bios, 并且有许多变种(兼容机), 由于 bios 的安全和功能不足, 后来有了 UEFI
+
+## 数学视角的操作系统
+
+everything is a state machine
+
+- 程序 = 初始状态 + 迁移函数
+
+## 并发
+
+找一下课程里的 mosaic 工具

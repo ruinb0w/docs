@@ -7,3 +7,7 @@
 ```sh
 pnpm config set electron_mirror https://mirrors.huaweicloud.com/electron/
 ```
+
+## 运行某些包失败
+
+使用 electron-rebuild 包来 rebuild 一下依赖

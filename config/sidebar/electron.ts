@@ -7,5 +7,6 @@ export const electron = {
     { text: "Config", link: "/src/front-end-rule/electron/config" },
     { text: "Main Process", link: "" },
     { text: "Render Process", link: "" },
+    { text: "preload", link: "/src/front-end-rule/electron/preload" },
   ],
 };
